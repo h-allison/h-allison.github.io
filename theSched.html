@@ -6,8 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
 
-        <link rel="stylesheet" href="/src/css/main.css">
-        <link rel="stylesheet" href="/src/css/reset.css">
+        <link rel="stylesheet" href="/src/css/main.css" />
+        <link rel="stylesheet" href="/src//css/table.css">
+        <link rel="stylesheet" href="/src/css/reset.css" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/src/js/sheetrock.min.js"></script>
     </head>
     <body>
         <header id="header">
@@ -16,20 +20,25 @@
                 <ul id="nav-list">
                     <li class="nav-links"><a href="index.html">Home</a></li>
                     <li class="nav-links"><a href="theMasterPlan.html">theMasterPlan</a></li>
-                    <li class="nav-links"><a href="theSched.html">theSched</a></li>
-                    <li class="nav-links"><a href="theRandom.html">theRandom</a></li>
+                    <li class="nav-links">
+                        <a href="theSched.html">theSched</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="theRandom.html">theRandom</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main id="main">
             <div id="main-wrapper">
-                
+                <div id="stats"></div>
+                <table id="table"></table>
             </div>
         </main>
         <footer id="footer">
-            <p>Textt</p>
+            <p>Text</p>
         </footer>
-
+        
         <script src="/src/js/main.js"></script>
     </body>
 </html>

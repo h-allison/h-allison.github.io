@@ -1,0 +1,125 @@
+div#main-wrapper * {
+    /*border: 1px dotted red;*/
+    padding: 2px;
+}
+
+div#main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+div#test,
+div#main-wrapper div#stats,
+div#main-wrapper table#table {
+    background-color: white;
+    border: 1px solid black;
+    width: 100rem;
+}
+
+div#main-wrapper div#stats * {
+    padding: 10px;
+}
+
+div#main-wrapper div#stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #ae2012ff;
+    width: 100vw;
+}
+
+div#main-wrapper div#stats div#dates {
+    grid-column: 1 / -1;
+    background-color: #bb3e03ff;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+div#main-wrapper div#stats div#dates br {
+}
+
+div#main-wrapper div#stats div#between {
+    grid-column: 1 / -1;
+    background-color: #bb3e03ff;
+    color: rgba(255, 255, 255, 0.30);
+}
+
+div#main-wrapper div#stats div#between br {
+}
+
+div#main-wrapper div#stats div#until {
+    grid-column: 1 / -1;
+    background-color: #ae2012ff;
+    color: rgb(255, 255, 255);
+}
+
+div#main-wrapper div#stats div#until br {
+}
+
+div#main-wrapper div#stats div#currDates {
+    grid-column: 1 / -1;
+    background-color: #ae2012ff;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+div#main-wrapper div#stats div#currDates br {
+}
+
+div#main-wrapper table#table * {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+div#main-wrapper table#table {
+    width: 100vw;
+}
+
+div#main-wrapper table#table thead {
+}
+
+div#main-wrapper table#table tbody {
+}
+
+div#main-wrapper table#table tbody tr {
+}
+
+div#main-wrapper table#table tbody tr td {
+}
+
+tbody {
+    background-color: hsla(30, 98%, 40%, 0.75);
+}
+
+td:nth-child(-1n+3) {
+    background-color: hsla(30, 98%, 40%, 0.25);
+    color: rgb(255, 255, 255);
+    text-align: right;
+    width: 2em;
+}
+
+td {
+    width: max-content;
+}
+
+td:nth-child(2n+4) {
+    background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+td:nth-child(2n+5) {
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+tr:nth-child(-1n+2) {
+    background-color: hsla(30, 98%, 40%, 0.75);
+    color: white;
+}
+
+tr:nth-child(7n+5),
+tr:nth-child(7n+7) {
+    background-color: #005f73;
+    color: white;
+}
+
+tr:nth-child(7n+6),
+tr:nth-child(7n+8) {
+    background-color: #bb3e03;
+    color: white;
+}
