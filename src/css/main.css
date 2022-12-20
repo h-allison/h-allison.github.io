@@ -49,7 +49,8 @@ main#main {
 }
 
 header#header h1#title {
-  background-color: #e9d8a6ff;
+  /*background-color: #e9d8a6ff;*/
+  background-color: #0a9396ff
 }
 
 header#header nav#nav {
@@ -131,6 +132,7 @@ header#header h1#title {
 }
 
 header#header h1#title a {
+  color: #005f73ff;
 }
 
 header#header nav#nav * {
@@ -161,43 +163,13 @@ main#main div#main-wrapper {
   overflow: scroll;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
 div#main-wrapper * {
   page-break-inside: avoid;
+}
+
+div#main-wrapper {
+  height: 100%;
+  width: 100%;
 }
 
 footer#footer {
