@@ -8,177 +8,179 @@
     url("../fonts/knewave-master/knewave-master/webfonts/knewave-webfont.woff")
       format("woff");
 }
+  
+  /*=========================================================*/
+  
+  header#header h1#title *,
+  nav#nav *,
+  footer#footer p {
+    font-family: "knewave-webfont", Fallback, sans-serif;
+    color: black;
+  }
+  
+  /*=========================================================*/
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *::after {
+    box-sizing: inherit;
+    text-decoration: none;
+    scrollbar-width: none;
+  }
+  
+  /* CSS HEX */
+  body#wrapper {
+    background-color: #001219ff;
+  }
+  
+  header#header {
+    background-color: #005f73ff;
+  }
+  
+  footer#footer {
+    background-color: #0a9396ff;
+  }
+  
+  main#main {
+    background-color: #94d2bdff;
+  }
+  
+  header#header h1#title {
+    /*background-color: #e9d8a6ff;*/
+    background-color: #0a9396ff
+  }
+  
+  header#header nav#nav {
+    background-color: #ee9b00ff;
+  }
+  
+  header#header nav#nav ul#nav-list {
+    background-color: #ca6702ff;
+  }
+  
+  header#header nav#nav ul#nav-list li.nav-links {
+    background-color: #bb3e03ff;
+  }
 
-/*=========================================================*/
-
-header#header h1#title *,
-nav#nav *,
-footer#footer p {
-  font-family: "knewave-webfont", Fallback, sans-serif;
-}
-
-/*=========================================================*/
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*::after {
-  box-sizing: inherit;
-  text-decoration: none;
-  scrollbar-width: none;
-}
-
-/* CSS HEX */
-body#wrapper {
-  background-color: #001219ff;
-}
-
-header#header {
-  background-color: #005f73ff;
-}
-
-footer#footer {
-  background-color: #0a9396ff;
-}
-
-main#main {
-  background-color: #94d2bdff;
-}
-
-header#header h1#title {
-  /*background-color: #e9d8a6ff;*/
-  background-color: #0a9396ff
-}
-
-header#header nav#nav {
-  background-color: #ee9b00ff;
-}
-
-header#header nav#nav ul#nav-list {
-  background-color: #ca6702ff;
-}
-
-header#header nav#nav ul#nav-list li.nav-links {
-  background-color: #bb3e03ff;
-}
-
-main#main main#main-wrapper {
-  background-color: #ae2012ff;
-  width: 100%;
-}
-
-footer#footer p {
-  background-color: #9b2226ff;
-}
-
-/*=========================================================*/
-
-body {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(4, minmax(min-content, auto)) 1fr repeat(
-      4,
-      minmax(min-content, auto)
-    );
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-body * {
-  /*border: 1px dotted red;*/
-  overflow: hidden;
-  scrollbar-width: 0;
-}
-
-header#header,
-footer#footer {
-  height: auto;
-  min-height: 4em;
-  max-height: 6em;
-  padding: 1em;
-}
-
-main#main {
-  padding: 1em;
-}
-
-header#header,
-header#header h1#title,
-nav#nav ul#nav-list,
-footer#footer {
-  display: flex;
-}
-
-header#header h1#title *,
-header#header nav#nav * {
-  padding: 2px;
-}
-
-header#header {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  flex-direction: column;
-  /* Aesthetically important */
-  align-items: center;
-  /* Aesthetically important */
-  justify-content: center;
-  /* Aesthetically important */
-}
-
-header#header h1#title {
-}
-
-header#header h1#title a {
-  color: #005f73ff;
-}
-
-header#header nav#nav * {
-}
-
-header#header nav#nav {
-}
-
-header#header nav#nav ul#nav-list {
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-header#header nav#nav ul#nav-list li.nav-links {
-}
-
-header#header nav#nav ul#nav-list li.nav-links a {
-}
-
-main#main {
-  grid-column: 1 / -1;
-  grid-row: 3 / 8;
-}
-
-main#main,
-main#main div#main-wrapper {
-  overflow: scroll;
-}
-
-div#main-wrapper * {
-  page-break-inside: avoid;
-}
-
-div#main-wrapper {
-  height: 100%;
-  width: 100%;
-}
-
-footer#footer {
-  grid-column: 1 / -1;
-  grid-row: 9;
-  flex-direction: row;
-  /* Aesthetically important */
-  align-items: center;
-  /* Aesthetically important */
-  justify-content: space-between;
-  /* Aesthetically important */
-}
+  header#header nav#nav ul#nav-list li.nav-links:hover {
+    background-color: #ca6702ff;
+  }
+  
+  main#main main#main-wrapper {
+    background-color: #ae2012ff;
+  }
+  
+  footer#footer p {
+    background-color: #9b2226ff;
+  }
+  
+  /*=========================================================*/
+  
+  body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, minmax(min-content, auto)) 1fr repeat(4,minmax(min-content, auto)
+      );
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  
+  body * {
+    border: 0px dotted red !important;
+    padding: 4px !important;
+    overflow: hidden;
+    scrollbar-width: 0;
+  }
+  
+  header#header,
+  footer#footer {
+    height: auto;
+    min-height: 4em;
+    max-height: 6em;
+    padding: 1em;
+  }
+  
+  main#main {
+    padding: 1em;
+  }
+  
+  header#header,
+  header#header h1#title,
+  nav#nav ul#nav-list,
+  footer#footer {
+    display: flex;
+  }
+  
+  header#header h1#title *,
+  header#header nav#nav * {
+    padding: 2px;
+  }
+  
+  header#header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    flex-direction: column;
+    /* Aesthetically important */
+    align-items: left;
+    /* Aesthetically important */
+    justify-content: center;
+    /* Aesthetically important */
+  }
+  
+  header#header h1#title {
+  }
+  
+  header#header h1#title a {}
+  
+  header#header nav#nav * {
+  }
+  
+  header#header nav#nav {
+  }
+  
+  header#header nav#nav ul#nav-list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header#header nav#nav ul#nav-list li.nav-links {
+  }
+  
+  header#header nav#nav ul#nav-list li.nav-links a {
+  }
+  
+  main#main {
+    grid-column: 1 / -1;
+    grid-row: 3 / 8;
+  }
+  
+  main#main,
+  main#main div#main-wrapper {
+    overflow: scroll;
+  }
+  
+  div#main-wrapper * {
+    page-break-inside: avoid;
+  }
+  
+  div#main-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  
+  footer#footer {
+    grid-column: 1 / -1;
+    grid-row: 9;
+    flex-direction: row;
+    /* Aesthetically important */
+    align-items: center;
+    /* Aesthetically important */
+    justify-content: space-between;
+    /* Aesthetically important */
+  }
+  
