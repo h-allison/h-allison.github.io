@@ -70,9 +70,7 @@
     background-color: #ca6702ff;
   }
   
-  main#main main#main-wrapper {
-    background-color: #ae2012ff;
-  }
+  main#main div#main-wrapper {}
   
   footer#footer p {
     background-color: #9b2226ff;
@@ -90,7 +88,7 @@
   }
   
   body * {
-    border: 0px dotted red !important;
+    /*border: 0px dotted red !important;*/
     padding: 4px !important;
     overflow: hidden;
     scrollbar-width: 0;
@@ -171,6 +169,11 @@
   div#main-wrapper {
     height: 100%;
     width: 100%;
+  }
+
+  main#main div#main-wrapper ul li img {
+    border: 10px solid rgba(10, 148, 150, 0.1);
+    padding: 0px !important;
   }
   
   footer#footer {
