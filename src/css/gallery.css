@@ -23,6 +23,7 @@ div#main-wrapper ul li {
   /* Aesthetically important */
   border: 10px solid rgba(10, 148, 150, 0.1);
   padding: 0px !important;
+  margin: 4px;
 }
 
 div#main-wrapper ul li img {
